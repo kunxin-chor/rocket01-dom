@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <div>
+            <label>Name</label>
+            <input type="text" id="name" name="name" />
+        </div>
+        <div>
+            <label>Age Group</label>
+            <!-- Radio buttons with the same
+             name are int the same group and will
+             be mutually exclusibe with each other -->
+            <input type="radio" name="age-group" class="age" value="below-18"/>
+            <label>Below 18</label>
+
+            <input type="radio" name="age-group" class="age" value="young-adult"/>
+            <label>18 to 25</label>
+
+            <input type="radio" name="age-group" class="age" value="adult"/>
+            <label>26 to 30</label>
+        </div>
+        <div>
+            <label> How do you spend your time online?</label>
+            <input type="checkbox" name="activities" class="activities" value="social-media"/>
+            <label>Social Media</label>
+
+            <input type="checkbox" name="activities" class="activities" value="games"/>
+            <label>Online games</label>
+
+            <input type="checkbox" name="activities" class="activities" value="videos"/>
+            <label>Streaming Videos</label>
+
+            <input type="checkbox" name="activities" class="activities" value="others"/>
+            <label>Others</label>
+        </div>
+        <div>
+            <label>Country</label>
+            <select id="country">
+                <option value="sg">Singapore</option>
+                <option value="in">Indonesia</option>
+                <option value="my">Malaysia</option>
+            </select>
+        </div>
+        <input type="submit" id="submitBtn" />
+    </div>
+    <!-- safest and easiest is just before the <body> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
