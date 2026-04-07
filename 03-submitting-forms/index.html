@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Form submission: all form elements (<input>, <select>) must have a 
+        `name` attribute -->
+    <form id="healthCheckForm">
+        <div>
+            <label>Email:</label>
+            <input type="email" name="email" />
+        </div>
+        <div>
+            <label>Weight:</label>
+            <input type="text" name="weight" />
+        </div>
+        <div>
+            <label>Height</label>
+            <input type="text" name="height" />
+        </div>
+        <div>
+            <label>Gender</label>
+            <input type="radio" name="gender" value="M"><label>M</label>
+            <input type="radio" name="gender" value="F"><label>F</label>
+        </div>
+        <div>
+            <label>Health Problems</label>
+            <input type="checkbox" name="health" value="high-blood-pressure">
+            <label>High Blood Pressure</label>
+
+            <input type="checkbox" name="health" value="diabetes">
+            <label>Diabetes</label>
+
+            <input type="checkbox" name="health" value="cancer">
+            <label>Cancer</label>
+
+            <input type="checkbox" name="health" value="others">
+            <label>Others</label>
+        </div>
+
+        <!-- We can use <button> to be a submit button
+            or <input type="submit"/> -->
+        <button>Submit</button>
+    </form>
+    <div>
+        BMI = <span id="bmi"></span>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
