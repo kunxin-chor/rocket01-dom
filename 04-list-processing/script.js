@@ -11,7 +11,16 @@ function displayTodos(todos) {
         todoList.appendChild(newListItem);
 
         // newListItem.innerHTML = "t.description"
-        newListItem.innerHTML = `${t.description} done:${t.done} date:${t.date}`
+        newListItem.innerHTML = `${t.description} (done:${t.done}, date:${t.date}) 
+                                 <button class="btn-delete">🗑️</button>`
+
+        // querySelector and querySelectorAll can be called on any HTML element
+        const deleteButton = newListItem.querySelector(".btn-delete");
+        deleteButton.addEventListener("click", function(){
+            deleteTodo(todos, t.id);
+            displayTodos(todos);
+        })
+
     }
 }
 

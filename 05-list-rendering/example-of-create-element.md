@@ -1,0 +1,1 @@
+https://stackblitz.com/edit/stackblitz-starters-fpnjmiqa?description=HTML/CSS/JS%20Starter&file=script.js,styles.css,index.html&file=script.js&terminalHeight=10&title=Static%20Starter

@@ -31,3 +31,17 @@ function addTodo(todos, description, date) {
     }
     todos.push(newTodo);
 }
+
+function deleteTodo(todos, idToDelete) {
+    let indexToDelete = -1;
+    // use a traditional for loop because we need
+    // the index
+    for (let i = 0; i < todos.length; i++) {
+        if (todos[i].id == idToDelete) {
+            indexToDelete = i;
+            break;
+        }
+    }
+
+    todos.splice(indexToDelete, 1);
+}
