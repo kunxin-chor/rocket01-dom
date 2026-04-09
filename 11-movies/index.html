@@ -11,30 +11,39 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   <title>Hello, world!</title>
-  <script src="data.js"></script>
-  <script src="script.js"></script>
+
 </head>
 
 <body>
 
   <main class="container">
+
+    <div class="mb-2 border-1">
+      <div>
+        <label>Movie Title:</label>
+        <input type="text" id="title" class="form-control" />
+      </div>
+
+      <div>
+        <label>Genre:</label>
+        <input type="text" id="genre" class="form-control" />
+      </div>
+
+      <button class="btn btn-primary mt-2" id="addMovieBtn">Add Movie</button>
+    </div>
+
+
+
+
     <div id="movies">
 
-      <!-- one card for one movie -->
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
+
 
     </div>
   </main>
 
-
+  <script src="data.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
