@@ -24,6 +24,7 @@ function displayAllMovies(movies) {
 
 displayAllMovies(movies);
 
+// add movie  button
 document.querySelector("#addMovieBtn").addEventListener("click", function(){
     // get the inputs from the form
     const title = document.querySelector("#title").value;
@@ -37,3 +38,16 @@ document.querySelector("#addMovieBtn").addEventListener("click", function(){
     displayAllMovies(movies);
 
 }) // end add event listener
+
+// DOMContentLoaded is an event that happens on document automatcially
+// when the web page finishes loading
+document.addEventListener("DOMContentLoaded", async function(){
+   // the movies variable below is the global movies from `data.js`
+    movies = await getData();
+    displayAllMovies(movies);
+
+})
+
+document.querySelector("#saveBtn").addEventListener("click", async function(){
+    saveData();
+})

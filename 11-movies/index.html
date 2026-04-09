@@ -32,6 +32,7 @@
       <button class="btn btn-primary mt-2" id="addMovieBtn">Add Movie</button>
     </div>
 
+    <button class="btn btn-success mt-3 mb-3" id="saveBtn">Save</button>
 
 
 
@@ -41,9 +42,13 @@
 
     </div>
   </main>
-
+  <!-- axios first because data.js will be referring to it -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="data.js"></script>
+  <!-- script.js will be referring to function in data.js, so data.js
+   must come first -->
   <script src="script.js"></script>
+
 </body>
 
 </html>
